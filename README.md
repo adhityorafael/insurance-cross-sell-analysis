@@ -1,4 +1,5 @@
 # Vehicle Insurance Cross-Sell Analysis
+![Tampilan Dashboard](dashboard_page-0001.jpg)
 
 ## Project Overview
 This project focuses on analyzing customer data to identify the best prospects for a cross-selling campaign. The core business objective is to help an insurance company determine which of their existing health insurance policyholders would most likely be interested in purchasing vehicle insurance.
@@ -37,4 +38,4 @@ This project was executed through a simple data analysis pipeline, demonstrating
 
 ### 4. Final Product Deployment
 *   Finalized the dashboard layout, applied consistent color palettes, and removed unnecessary default technical labels.
-*   Exported the final interactive dashboard view into a high-resolution `.jpg`/`.png` format, which is displayed in the preview section of this repository.
+*   Exported the final interactive dashboard view into a high-resolution `.jpg`/`.png` format, which is displayed above.
