@@ -38,4 +38,4 @@ This project was executed through a simple data analysis pipeline, demonstrating
 
 ### 4. Final Product Deployment
 *   Finalized the dashboard layout, applied consistent color palettes, and removed unnecessary default technical labels.
-*   Exported the final interactive dashboard view into a high-resolution `.jpg`/`.png` format, which is displayed above.
+*   Exported the final interactive dashboard view into a high-resolution `.jpg` format, which is displayed above.
