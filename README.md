@@ -1,53 +1,60 @@
-# Vehicle Insurance Cross-Sell Analysis
+# Analisis Cross-Sell Asuransi Kendaraan
 ![Tampilan Dashboard](dashboard_page-0001.jpg)
 
-## Project Overview
-This project focuses on analyzing customer data to identify the best prospects for a cross-selling campaign. The core business objective is to help an insurance company determine which of their existing health insurance policyholders would most likely be interested in purchasing vehicle insurance.
+## Gambaran Umum Proyek
+Proyek ini berfokus pada analisis data pelanggan untuk mengidentifikasi prospek terbaik dalam kampanye *cross-selling* (penjualan silang). Tujuan utamanya adalah untuk membantu perusahaan asuransi menentukan pemegang polis asuransi kesehatan mana yang kemungkinan besar tertarik untuk membeli asuransi kendaraan.
 
-By building an interactive dashboard in **Power BI**, this project transforms raw customer demographics, vehicle history, and policy engagement data into actionable business insights. The visual analytics are designed to empower the marketing team to optimize their advertising budget, target the right audience accurately, and significantly improve overall conversion rates.
+Dengan membangun *dashboard* interaktif di **Power BI**, proyek ini mengubah data mentah demografi pelanggan, riwayat kendaraan, dan data keterlibatan polis menjadi wawasan bisnis yang dapat ditindaklanjuti. *Dashboard* ini dirancang untuk membantu tim pemasaran agar dapat mengoptimalkan anggaran iklan mereka, menargetkan audiens yang tepat, dan meningkatkan tingkat konversi secara signifikan.
 
-## Dataset Source
-The dataset used for this dashboard is sourced from **Kaggle**: [Health Insurance Cross Sell Prediction](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction).
+## Sumber Dataset
+Dataset yang digunakan untuk *dashboard* ini bersumber dari **Kaggle**: [Health Insurance Cross Sell Prediction](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction).
 
-*Note: This is a publicly available synthetic dataset widely used for data analytics practice. It was specifically selected for this portfolio project to demonstrate practical skills in data analysis using SQL and Power BI.*
+*Catatan: Ini adalah dataset sintetis yang tersedia untuk publik dan banyak digunakan untuk praktik analisis data. Dataset ini dipilih untuk proyek portofolio ini untuk mendemonstrasikan keterampilan praktis dalam analisis data menggunakan SQL dan Power BI.*
 
-## Process Diary: Step-by-Step Workflow
+## Struktur Repositori
+*   `1. Create insurance_cross_sell Database.sql` : Query SQL untuk pembuatan *database* dan pemisahan tabel.
+*   `insurance_sales.csv` : Dataset mentah awal yang digunakan untuk analisis.
+*   `dashboard.pbix` : File sumber Power BI interaktif (dapat diunduh dan dibuka di Power BI Desktop).
+*   `dashboard_page-0001.jpg` : *Preview* hasil akhir *dashboard*.
+*   `README.md` : Dokumentasi utama yang menjelaskan gambaran proyek, alur kerja, dan wawasan bisnis.
 
-This project was executed through a simple data analysis pipeline, demonstrating a workflow from data extraction to visualization:
+## Catatan Proses dan Alur Kerja
 
-### 1. Data Acquisition & Cleaning (Microsoft Excel)
-*   Acquired the raw dummy dataset from Kaggle.
-*   Performed initial data profiling, formatting, and preliminary cleaning in Excel to ensure data integrity before importing it into the database.
+Proyek ini dieksekusi melalui *pipeline* analisis data yang sederhana dengan mendemonstrasikan alur kerja, mulai dari ekstraksi data hingga visualisasi:
 
-### 2. Database Creation & Normalization (SQL)
-*   Imported the cleaned dataset into a SQL database environment.
-*   Applied database normalization concepts by splitting the flat dataset into **3 relational tables** (e.g., Customer Demographics, Vehicle History, and Policy/Sales Data). This step was crucial for optimizing data storage and learning about **Star Schema model** for analysis.
+### 1. Akuisisi & Pembersihan Data (Microsoft Excel)
+*   Memperoleh dataset *dummy* mentah dari Kaggle.
+*   Melakukan *profiling* data awal dan pembersihan awal di Excel untuk memastikan integritas data sebelum mengimpornya ke dalam *database*.
 
-### 3. Dashboard Development (Power BI)
-*   Connected Power BI directly to the SQL database to load the relational tables.
-*   Learned to design a simple dashboard focusing on data storytelling, clean aesthetic, and proper alignment.
-*   **Built the following visual components:**
-    *   **3 KPI Cards:** Highlighting *Total Customers*, *Total Annual Premium*, and overall *Conversion Rate* using the 'New Card' visual.
-    *   **4 Analytical Charts:** 
-        *   Conversion Rate by Age Group (Column Chart)
-        *   Conversion Rate vs. Vehicle Damage (Donut Chart)
-        *   Top 5 Sales Channels by Premium (Filtered Horizontal Bar Chart)
-        *   Conversion Rate vs. Insurance Status (Column Chart with categorical X-axis)
-    *   **Interactive Slicer:** Implemented a 'Tile' style slicer for *Gender* filtering (Male/Female) enabling cross-filtering.
-    *   **Key Insights Panel:** Integrated a dedicated text section to highlight actionable business recommendations for stakeholders.
+### 2. Pembuatan Database & Normalisasi (SQL)
+*   Mengimpor dataset yang telah dibersihkan ke dalam lingkungan *database* SQL.
+*   Menerapkan konsep normalisasi *database* dengan membagi dataset tunggal menjadi **3 tabel relasional** (Demografi Pelanggan, Riwayat Kendaraan, dan Data Polis/Penjualan). Langkah ini sangat penting untuk mengoptimalkan penyimpanan data dan mempelajari pemodelan **Star Schema** untuk analisis data.
 
-### 4. Final Product Deployment
-*   Finalized the dashboard layout, applied consistent color palettes, and removed unnecessary default technical labels.
-*   Exported the final interactive dashboard view into a high-resolution `.jpg` format, which is displayed above.
+### 3. Pengembangan Dashboard (Power BI)
+*   Menghubungkan Power BI secara langsung ke *database* SQL untuk memuat tabel relasional.
+*   Belajar merancang *dashboard* sederhana yang berfokus pada *data storytelling*, estetika yang bersih, dan tata letak yang presisi.
+*   **Membangun komponen visual berikut:**
+    *   **3 Kartu KPI:** Menyoroti *Total Pelanggan*, *Total Premi Tahunan*, dan *Tingkat Konversi* secara keseluruhan menggunakan visual 'New Card'.
+    *   **4 Grafik Analitik:** 
+        *   Tingkat Konversi Berdasarkan Kelompok Usia (Grafik Kolom)
+        *   Tingkat Konversi vs. Riwayat Kerusakan Kendaraan (Grafik Donat)
+        *   Top 5 Saluran Penjualan Berdasarkan Premi (Grafik Batang Horizontal yang Difilter)
+        *   Tingkat Konversi vs. Status Asuransi (Grafik Kolom dengan Sumbu X Kategorikal)
+    *   **Slicer Interaktif:** Mengimplementasikan *slicer* bergaya 'Tile' untuk filter *Gender* (Pria/Wanita) yang memungkinkan proses *cross-filtering*.
+    *   **Panel Key Insights:** Mengintegrasikan bagian teks khusus untuk menyoroti rekomendasi bisnis yang dapat ditindaklanjuti oleh para pemangku kepentingan.
 
-## Key Business Insights
+### 4. Penyelesaian Produk Akhir
+*   Menyempurnakan tata letak *dashboard*, menerapkan palet warna yang konsisten, dan menghapus label teknis bawaan (*default*) yang tidak diperlukan.
+*   Mengekspor tampilan *dashboard* interaktif akhir ke dalam format `.jpg` beresolusi tinggi, yang ditampilkan di atas.
 
-Based on the interactive dashboard analysis, here are the actionable insights for the marketing and sales teams:
+## Wawasan Bisnis Utama
 
-1. The highest cross-sell conversion rates are found within the mature age group, specifically **36-45 years old (21.54%)**. In contrast, the younger demographic (18-25 years old) shows a minimal conversion rate (3.53%). **Marketing campaigns should be heavily targeted toward the 36-45 age bracket**.
-Customers with a history of **vehicle damage** have a drastically higher response rate (**23.77%**) compared to those without prior damage (0.52%). This serves as the strongest behavioral indicator for cross-selling success.
-3. **Sales Channel 152** is the primary revenue driver, generating over **₹4 Billion** in total premiums. Resources should be prioritized to optimize this specific channel.
-4. Minimize marketing efforts directed at customers who already have vehicle insurance, as their conversion rate is virtually non-existent (**0.09%**). 
+Berdasarkan analisis *dashboard* interaktif, berikut adalah wawasan yang dapat ditindaklanjuti oleh tim pemasaran dan penjualan:
 
-## Strategic Conclusion
-To maximize Return on Investment (ROI), the advertising and outreach budget should be strictly focused on **uninsured customers with a history of vehicle damage, particularly within the 36-45 age group, predominantly utilizing Sales Channel 152**.
+1. Tingkat konversi *cross-sell* tertinggi ditemukan pada kelompok usia matang, secara spesifik **36-45 tahun (21,54%)**. Sebaliknya, demografi yang lebih muda (18-25 tahun) menunjukkan tingkat konversi yang sangat minim (3,53%). **Kampanye pemasaran harus ditargetkan secara intensif pada rentang usia 36-45 tahun**.
+2. Pelanggan dengan riwayat **kerusakan kendaraan** memiliki tingkat respons/konversi yang jauh lebih tinggi (**23,77%**) dibandingkan mereka yang tidak memiliki riwayat kerusakan (0,52%). Hal ini menjadi indikator perilaku terkuat untuk keberhasilan *cross-selling*.
+3. **Saluran Penjualan 152** adalah pendorong pendapatan utama, menghasilkan lebih dari **₹4 Miliar** dalam total premi. Sumber daya harus diprioritaskan untuk mengoptimalkan saluran spesifik ini.
+4. Minimalkan upaya pemasaran yang ditujukan kepada pelanggan yang sudah memiliki asuransi kendaraan, karena tingkat konversi mereka hampir tidak ada (**0,09%**). 
+
+## Kesimpulan Strategis
+Untuk memaksimalkan *Return of Investment* (ROI), anggaran iklan dan penjangkauan harus difokuskan secara ketat pada **pelanggan yang belum berasuransi namun memiliki riwayat kerusakan kendaraan, khususnya dalam rentang usia 36-45 tahun, dan secara dominan memanfaatkan Saluran Penjualan 152**.
