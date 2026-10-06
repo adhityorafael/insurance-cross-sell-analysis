@@ -56,5 +56,5 @@ Berdasarkan analisis *dashboard* interaktif, berikut adalah wawasan yang dapat d
 3. **Saluran Penjualan 152** adalah pendorong pendapatan utama, menghasilkan lebih dari **₹4 Miliar** dalam total premi. Sumber daya harus diprioritaskan untuk mengoptimalkan saluran spesifik ini.
 4. Minimalkan upaya pemasaran yang ditujukan kepada pelanggan yang sudah memiliki asuransi kendaraan, karena tingkat konversi mereka hampir tidak ada (**0,09%**). 
 
-## Kesimpulan Strategis
+## Kesimpulan
 Untuk memaksimalkan *Return of Investment* (ROI), anggaran iklan dan penjangkauan harus difokuskan secara ketat pada **pelanggan yang belum berasuransi namun memiliki riwayat kerusakan kendaraan, khususnya dalam rentang usia 36-45 tahun, dan secara dominan memanfaatkan Saluran Penjualan 152**.
