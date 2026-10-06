@@ -9,7 +9,7 @@ By building an interactive dashboard in **Power BI**, this project transforms ra
 ## Dataset Source
 The dataset used for this dashboard is sourced from **Kaggle**: [Health Insurance Cross Sell Prediction](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction).
 
-*Note: This is a publicly available synthetic dataset widely used for data analytics practice. It was specifically selected for this portfolio project to demonstrate practical skills in data analysis using Power BI.*
+*Note: This is a publicly available synthetic dataset widely used for data analytics practice. It was specifically selected for this portfolio project to demonstrate practical skills in data analysis using SQL and Power BI.*
 
 ## Process Diary: Step-by-Step Workflow
 
